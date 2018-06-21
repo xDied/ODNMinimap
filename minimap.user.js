@@ -37,7 +37,7 @@ window.addEventListener('load', function () {
     y = 0;
     //list of all available templates
     template_list = null;
-    zoomlevel = 9;
+    zoomlevel = 8;
     //toggle options
     toggle_show = true;
     toggle_follow = true; //if minimap is following window, x_window = x and y_window = y;
@@ -280,7 +280,7 @@ function loadTemplates() {
         if (zooming_in == false && zooming_out == false) {
             document.getElementById("minimap-box").style.display = "none";
             document.getElementById("minimap-text").style.display = "block";
-            document.getElementById("minimap-text").innerHTML = "No template nearby.";
+            document.getElementById("minimap-text").innerHTML = "Não há templates.";
         }
     } else {
         document.getElementById("minimap-box").style.display = "block";
