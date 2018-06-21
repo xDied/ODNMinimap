@@ -64,7 +64,7 @@ window.addEventListener('load', function () {
         '</div><div id="minimap-config" style="line-height:20px;">' +
         '<span id="hide-map" style="cursor:pointer;">ODN Minimap' +
         '</span><span id="follow-mouse" style="cursor:pointer;"' +
-        '</span><span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
+        '</span><span id="zoom-plus" style="cursor:pointer;font-weight:bold;"></span>' +
         '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;"></span>' +
         '</div>' +
         '</div>';
