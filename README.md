@@ -1,2 +1,5 @@
 # ODNMinimap
-ODN Minimap
+Minimapa da ODN
+
+Creditos:
+olegispe#2453
