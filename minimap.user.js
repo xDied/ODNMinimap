@@ -62,7 +62,11 @@ window.addEventListener('load', function () {
         '<canvas id="minimap-board" style="width: 100%; height: 100%;z-index:2;position:absolute;top:0;left:0;"></canvas>' +
         '<canvas id="minimap-cursor" style="width: 100%; height: 100%;z-index:3;position:absolute;top:0;left:0;"></canvas>' +
         '</div><div id="minimap-config" style="line-height:20px;">' +
-        '<span id="odn" style="cursor:pointer;">ODN Minimap' +
+        '<span id="hide-map" style="cursor:pointer;">ODN Minimap' +
+        '</span><span id="follow-mouse" style="cursor:pointer;"' +
+        '</span><span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
+        '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;"></span>' +
+        '</div>' +
         '</div>';
     document.body.appendChild(div);
     minimap = document.getElementById("minimap");
@@ -87,6 +91,15 @@ window.addEventListener('load', function () {
     drawBoard();
     drawCursor();
 
+    document.getElementById("hide-map").onclick = function () {
+        console.log("This should do something, but it doesn't");
+        toggle_show = false;
+        document.getElementById("minimap-box").style.display = "none";
+        document.getElementById("minimap-config").style.display = "none";
+        document.getElementById("minimap-text").style.display = "block";
+        document.getElementById("minimap-text").innerHTML = "Mostrar mapa";
+        document.getElementById("minimap-text").style.cursor = "pointer";
+    };
     document.getElementById("minimap-text").onclick = function () {
         toggle_show = true;
         document.getElementById("minimap-box").style.display = "block";
@@ -94,6 +107,37 @@ window.addEventListener('load', function () {
         document.getElementById("minimap-text").style.display = "none";
         document.getElementById("minimap-text").style.cursor = "default";
         loadTemplates();
+    };
+    document.getElementById("zoom-plus").addEventListener('mousedown', function (e) {
+        e.preventDefault();
+        zooming_in = true;
+        zooming_out = false;
+        zoomIn();
+    }, false);
+    document.getElementById("zoom-minus").addEventListener('mousedown', function (e) {
+        e.preventDefault();
+        zooming_out = true;
+        zooming_in = false;
+        zoomOut();
+    }, false);
+    document.getElementById("zoom-plus").addEventListener('mouseup', function (e) {
+        zooming_in = false;
+    }, false);
+    document.getElementById("zoom-minus").addEventListener('mouseup', function (e) {
+        zooming_out = false;
+    }, false);
+    document.getElementById("follow-mouse").onclick = function () {
+        toggle_follow = !toggle_follow;
+        if (toggle_follow) {
+            this.innerHTML = "Seguir o mouse";
+            loadTemplates();
+            x_window = x;
+            y_window = y;
+            drawCursor();
+        } else {
+            this.innerHTML = "Seguir a tela";
+            getCenter();
+        }
     };
 
     gameWindow = document.getElementById("layer1");
