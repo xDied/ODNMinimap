@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ODNZone Minimap
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      2.0
 // @description  ODNZone Minimap
 // @author       olegispe#2453 Edited by Obsidian
 // @match        https://pixelzone.io/*
@@ -55,7 +55,7 @@ window.addEventListener('load', function () {
     var div = document.createElement('div');
     div.setAttribute('class', 'post block bc2');
     div.innerHTML = '<div id="minimapbg" style="position: absolute; right: 1em; bottom: 1em;">' +
-        '<div class="posy" id="posyt" style="background-color: rgba(160, 0, 0, 0.75); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
+        '<div class="posy" id="posyt" style="background-size: 97%; background-image: url(https://cdn.pbrd.co/images/HqZKYUY.png); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
         '<div id="minimap-text" style="display: none;"></div>' +
         '<div id="minimap-box" style="position: relative;width:380px;height:260px">' +
         '<canvas id="minimap" style="width: 100%; height: 100%;z-index:1;position:absolute;top:0;left:0;"></canvas>' +
