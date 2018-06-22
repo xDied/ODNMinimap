@@ -40,5 +40,19 @@
     "y": 1220,
     "width": 177,
     "height": 173
+  },
+  "Flag": {
+    "name": "Flag.png",
+    "x": 2034,
+    "y": 1489,
+    "width": 303,
+    "height": 214
+  },
+  "oi": {
+    "name": "oi.png",
+    "x": 1674,
+    "y": 1522,
+    "width": 106,
+    "height": 121
   }
 }
