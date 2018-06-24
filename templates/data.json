@@ -54,6 +54,12 @@
     "y": 1522,
     "width": 106,
     "height": 121
- 
+  },
+  "Yellow": {
+    "name": "Yellow.png",
+    "x": 2161,
+    "y": -3857,
+    "width": 334,
+    "height": 225
   }
 }
