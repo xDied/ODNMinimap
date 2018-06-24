@@ -12,6 +12,34 @@
 // @grant        none
 // ==/UserScript==
 
+var abcd = true;
+document.onkeydown = function (e) {
+  e = e || window.event;
+  switch (e.which || e.keyCode) {
+        case 77 : // 77 = "M"
+        abcd = !abcd;
+      console.log(abcd);
+        if (abcd == true){
+          toggleShow()
+             document.getElementById("minimap-box").style.display = "block";
+             document.getElementById("minimap-config").style.display = "block";
+             document.getElementById("minimap-text").style.display = "none";
+             document.getElementById("minimap-text").style.cursor = "default";
+        }else if (abcd == false){
+          toggleShow()
+        document.getElementById("minimap-box").style.display = "none";
+        document.getElementById("minimap-config").style.display = "none";
+        document.getElementById("minimap-text").style.display = "block";
+        document.getElementById("minimap-text").innerHTML = "Mostrar mapa";
+        document.getElementById("minimap-text").style.cursor = "pointer";
+        }
+     break;
+    case 187:
+      console.log("Ainda em construção");
+      break;
+  }
+}
+
 Number.prototype.between = function(a, b) {
   var min = Math.min.apply(Math, [a, b]),
     max = Math.max.apply(Math, [a, b]);
