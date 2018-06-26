@@ -61,5 +61,19 @@
     "y": -3857,
     "width": 334,
     "height": 225
+  },
+  "smurf": {
+    "name": "smurf.png",
+    "x": 1484,
+    "y": 1866,
+    "width": 63,
+    "height" 36
+  },
+  "soldadinha": {
+    "name": "soldadinha.png",
+    "x": 1232,
+    "y": 2042,
+    "widht": 90,
+    "height": 90
   }
 }
