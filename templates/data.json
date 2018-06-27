@@ -75,5 +75,12 @@
     "y": 2042,
     "widht": 90,
     "height": 90
+  },
+  "pixelart": {
+    "name": "pixelart.png",
+    "x": 1696,
+    "y": -2800,
+    "widht": 100,
+    "height": 231
   }
 }
