@@ -104,13 +104,11 @@
 	"width": 102,
 	"height": 48 
   },
-    "fanta" {
-	"fanta.png",
+    "fanta": {
+	"name": "fanta.png",
 	"x": 1509,
 	"y": 59,
 	"width": 33,
 	"height": 25
   }
 }
-
-  
