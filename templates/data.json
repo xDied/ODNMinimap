@@ -110,5 +110,12 @@
 	"y": 59,
 	"width": 33,
 	"height": 25
+  },
+    "discorange": {
+	"name": "discorange.png",
+	"x": 1402,
+	"y": 41,
+	"width": 113,
+	"height": 19
   }
 }
