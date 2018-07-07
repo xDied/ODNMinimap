@@ -117,5 +117,12 @@
 	"y": 41,
 	"width": 113,
 	"height": 19
+  },
+    "Eagle": {
+	"name": "Eagle.png",
+	"x": 1717,
+	"y": -99,
+	"width": 260,
+	"height": 176
   }
 }
