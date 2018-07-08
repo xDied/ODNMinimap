@@ -124,5 +124,14 @@
 	"y": -99,
 	"width": 260,
 	"height": 176
+  },
+    "cutes": {
+	"name": "cutes.png",
+	"x": 2570,
+	"y": -2801,
+	"width": 312,
+	"height": 233
+  }
+}
   }
 }
