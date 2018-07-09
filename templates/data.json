@@ -61,13 +61,6 @@
     "y": -3857,
     "width": 334,
     "height": 225
-   },
-  "soldadinha": {
-    "name": "soldadinha.png",
-    "x": 1232,
-    "y": 2042,
-    "width": 90,
-    "height": 90
   },
   "flupx": {
     "name": "flupx.png",
@@ -76,19 +69,19 @@
     "width": 322,
     "height": 228
    },
-  "smurf": {
-    "name": "smurf.png",
-    "x": 1484,
-    "y": 1866,
-    "width": 63,
-    "height": 36
+  "ataque": {
+    "name": "ataque.png",
+    "x": 1806,
+    "y": 3048,
+    "width": 236,
+    "height": 108
    },
-  "discord.io_2": {
-    "name": "discord.io_2.png",
-    "x": 1361,
+  "centro": {
+    "name": "centro.png",
+    "x": 1232,
     "y": 1814,
-    "width": 209,
-    "height": 30
+    "width": 568,
+    "height": 318
   },
   "cityorange": {
     "name": "cityorange.png",
