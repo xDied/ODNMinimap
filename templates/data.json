@@ -69,13 +69,6 @@
     "width": 322,
     "height": 228
    },
-  "ataque": {
-    "name": "ataque.png",
-    "x": 1806,
-    "y": 3048,
-    "width": 236,
-    "height": 108
-   },
   "centro": {
     "name": "centro.png",
     "x": 1232,
