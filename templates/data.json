@@ -131,5 +131,12 @@
 	"y": 3773,
 	"width": 209,
 	"height": 44
+},
+    "FlagZone": {
+	"name": "FlagZone.png",
+	"x": 2176,
+	"y": 3128,
+	"width": 853,
+	"height": 431
   }
 }
