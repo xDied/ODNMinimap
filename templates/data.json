@@ -138,5 +138,12 @@
         "y": 3020,
         "width": 43,
         "height": 45 
+},
+    "allies": {
+        "name": "allies.png",
+        "x": 1576,
+        "y": 1340,
+        "width": 109,
+        "height": 66 
   }
 }
