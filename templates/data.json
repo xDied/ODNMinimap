@@ -61,13 +61,6 @@
     "y": -3857,
     "width": 334,
     "height": 225
-  },
-  "flupx": {
-    "name": "flupx.png",
-    "x": 1117,
-    "y": 315,
-    "width": 322,
-    "height": 228
    },
   "centro": {
     "name": "centro.png",
@@ -159,6 +152,13 @@
         "y": 1707,
         "width": 118,
         "height": 145 
+},
+  "flupx": {
+    "name": "flupx.png",
+    "x": 1117,
+    "y": 315,
+    "width": 322,
+    "height": 228 
   }
 }
 
