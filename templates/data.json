@@ -173,12 +173,19 @@
     "y": 873,
     "width": 128,
     "height": 77 
-  },
+ },
   "kkkk": {
     "name": "kkkk.png",
     "x": 1884,
     "y": 429,
     "width": 58,
     "height": 66 
+},
+  "jaguarao": {
+    "name": "jaguarao.png",
+    "x": 1740,
+    "y": 3510,
+    "width": 67,
+    "height": 85 
   }
 }
