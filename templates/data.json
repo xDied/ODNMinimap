@@ -195,12 +195,12 @@
     "width": 169,
     "height": 88 
 },
-  "skull": {
-    "name": "skull.png",
-    "x": -3236,
-    "y": 775,
-    "width": 355,
-    "height": 264 
+  "mtk": {
+    "name": "mtk.png",
+    "x": 1393,
+    "y": -149,
+    "width": 116,
+    "height": 71 
 },
   "am": {
     "name": "am.png",
