@@ -195,7 +195,14 @@
     "width": 169,
     "height": 88 
 },
-  "an": {
+  "skull": {
+    "name": "skull.png",
+    "x": -3236,
+    "y": 775,
+    "width": 355,
+    "height": 264 
+},
+  "am": {
     "name": "am.png",
     "x": 2984,
     "y": 1651,
