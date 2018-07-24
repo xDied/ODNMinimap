@@ -215,5 +215,12 @@
     "y": 903,
     "width": 49,
     "height": 26 
+},
+  "ch": {
+    "name": "ch.png",
+    "x": 169,
+    "y": 955,
+    "width": 56,
+    "height": 58 
   }
 }
