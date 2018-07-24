@@ -76,12 +76,12 @@
     "width": 37,
     "height": 38
   },
-    "orange": {
-	"name": "orange.png",
-	"x": 1404,
-	"y": 89,
-	"width": 106,
-	"height": 52 
+    "orm": {
+	"name": "orm.png",
+	"x": 1876,
+	"y": -213,
+	"width": 189,
+	"height": 168
   },
     "fanta": {
 	"name": "fanta.png",
