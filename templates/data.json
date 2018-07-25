@@ -222,5 +222,12 @@
     "y": 955,
     "width": 56,
     "height": 58 
+},
+  "BrVd": {
+    "name": "BrVd.png",
+    "x": 220,
+    "y": 2540,
+    "width": 708,
+    "height": 421 
   }
 }
