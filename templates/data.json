@@ -250,5 +250,12 @@
     "y": 3127,
     "width": 1921,
     "height": 969 
+},
+  "olm": {
+    "name": "olm.png",
+    "x": 2785,
+    "y": 159,
+    "width": 48,
+    "height": 37 
   }
 }
