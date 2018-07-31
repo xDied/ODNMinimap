@@ -264,5 +264,12 @@
     "y": -3740,
     "width": 111,
     "height": 49 
+},
+  "rsss": {
+    "name": "rsss.png",
+    "x": 455,
+    "y": 701,
+    "width": 202,
+    "height": 239 
   }
 }
