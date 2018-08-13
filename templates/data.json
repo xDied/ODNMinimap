@@ -278,5 +278,12 @@
     "y": -3916,
     "width": 351,
     "height": 219 
+},
+  "madru": {
+    "name": "madru.png",
+    "x": 2262,
+    "y": 3066,
+    "width": 59,
+    "height": 39 
   }
 }
