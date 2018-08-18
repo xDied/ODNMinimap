@@ -314,12 +314,12 @@
     "width": 260,
     "height": 250 
 },
-  "amt": {
-    "name": "amt.png",
-    "x": 2362,
-    "y": 3004,
-    "width": 97,
-    "height": 102 
+  "planta": {
+    "name": "planta.png",
+    "x": 3117,
+    "y": 2635,
+    "width": 60,
+    "height": 109 
   }
 }
 
