@@ -284,14 +284,7 @@
     "x": 2262,
     "y": 3066,
     "width": 59,
-    "height": 39 
-},
-  "discord": {
-    "name": "discord.png",
-    "x": 3052,
-    "y": 3084,
-    "width": 356,
-    "height": 21 
+    "height": 39  
 },
   "Obs": {
     "name": "Obs.png",
