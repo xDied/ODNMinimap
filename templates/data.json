@@ -328,12 +328,12 @@
     "width": 208,
     "height": 215 
 },
-  "dr": {
-    "name": "dr.png",
-    "x": 3033,
-    "y": 3027,
-    "width": 395,
-    "height": 79 
+  "az": {
+    "name": "az.png",
+    "x": 1444,
+    "y": 2015,
+    "width": 92,
+    "height": 64 
   }
 }
 
