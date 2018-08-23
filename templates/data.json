@@ -328,8 +328,15 @@
     "width": 208,
     "height": 215 
 },
-  "az": {
-    "name": "az.png",
+  "xoxo": {
+    "name": "xoxo.png",
+    "x": 2175,
+    "y": 2942,
+    "width": 164,
+    "height": 67 
+},
+  "Antartic": {
+    "name": "Antartic.png",
     "x": 1444,
     "y": 2015,
     "width": 92,
