@@ -341,5 +341,12 @@
     "y": 1502,
     "width": 52,
     "height": 51 
+},
+  "fluzao": {
+    "name": "fluzao.png",
+    "x": 1876,
+    "y": 300,
+    "width": 102,
+    "height": 84 
   }
 }
