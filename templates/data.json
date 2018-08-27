@@ -134,10 +134,10 @@
 },
     "allies": {
         "name": "allies.png",
-        "x": 1576,
-        "y": 1340,
-        "width": 109,
-        "height": 66 
+        "x": 1563,
+        "y": 1339,
+        "width": 135,
+        "height": 67 
  },
     "mc": {
         "name": "mc.png",
