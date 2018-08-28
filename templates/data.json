@@ -348,5 +348,12 @@
     "y": 300,
     "width": 102,
     "height": 84 
+},
+  "nap": {
+    "name": "nap.png",
+    "x": 1117,
+    "y": 249,
+    "width": 96,
+    "height": 14 
   }
 }
