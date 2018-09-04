@@ -362,5 +362,12 @@
     "y": 2770,
     "width": 200,
     "height": 200 
+},
+  "Mural": {
+    "name": "Mural.png",
+    "x": 1132,
+    "y": 2140,
+    "width": 79,
+    "height": 79 
   }
 }
