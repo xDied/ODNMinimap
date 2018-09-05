@@ -62,12 +62,12 @@
     "width": 334,
     "height": 225
    },
-  "centro": {
-    "name": "centro.png",
-    "x": 1232,
-    "y": 1814,
-    "width": 568,
-    "height": 318
+  "Antartic": {
+    "name": "Antartic.png",
+    "x": 1444,
+    "y": 2015,
+    "width": 92,
+    "height": 64
   },
   "cityorange": {
     "name": "cityorange.png",
