@@ -369,5 +369,12 @@
     "y": 2140,
     "width": 79,
     "height": 79 
+},
+  "Praise": {
+    "name": "Praise.png",
+    "x": 1431,
+    "y": 2097,
+    "width": 51,
+    "height": 54 
   }
 }
