@@ -376,5 +376,12 @@
     "y": 2096,
     "width": 51,
     "height": 54 
+},
+  "sauronpz": {
+    "name": "sauronpz.png",
+    "x": 927,
+    "y": 2545,
+    "width": 43,
+    "height": 98 
   }
 }
