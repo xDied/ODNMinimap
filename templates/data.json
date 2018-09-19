@@ -390,5 +390,12 @@
     "y": 972,
     "width": 142,
     "height": 154 
+},
+  "ancap": {
+    "name": "ancap.png",
+    "x": 1001,
+    "y": 2795,
+    "width": 300,
+    "height": 165 
   }
 }
