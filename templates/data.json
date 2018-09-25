@@ -398,11 +398,11 @@
     "width": 100,
     "height": 114 
 },
-  "atk": {
-    "name": "atk.png",
-    "x": 3368,
-    "y": 791,
-    "width": 90,
-    "height": 50 
+  "link": {
+    "name": "link.png",
+    "x": 1275,
+    "y": -802,
+    "width": 188,
+    "height": 43 
   }
 }
