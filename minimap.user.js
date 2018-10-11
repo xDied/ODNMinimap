@@ -12,48 +12,20 @@
 // @grant        none
 // ==/UserScript==
 
-var abcd = true;
-document.onkeydown = function (e) {
-  e = e || window.event;
-  switch (e.which || e.keyCode) {
-        case 77 : // 77 = "M"
-        abcd = !abcd;
-      console.log(abcd);
-        if (abcd == true){
-          toggleShow()
-             document.getElementById("minimap-box").style.display = "block";
-             document.getElementById("minimap-config").style.display = "block";
-             document.getElementById("minimap-text").style.display = "none";
-             document.getElementById("minimap-text").style.cursor = "default";
-        }else if (abcd == false){
-          toggleShow()
-        document.getElementById("minimap-box").style.display = "none";
-        document.getElementById("minimap-config").style.display = "none";
-        document.getElementById("minimap-text").style.display = "block";
-        document.getElementById("minimap-text").innerHTML = "Mostrar mapa";
-        document.getElementById("minimap-text").style.cursor = "pointer";
-        }
-     break;
-    case 187:
-      console.log("Ainda em construção");
-      break;
-  }
-}
-
 Number.prototype.between = function(a, b) {
   var min = Math.min.apply(Math, [a, b]),
     max = Math.max.apply(Math, [a, b]);
   return this > min && this < max;
 };
-
-window.baseTepmlateUrl = 'https://raw.githubusercontent.com/xDied/ODNMinimap/master';
+var range = 25;
+window.baseTepmlateUrl = 'https://raw.githubusercontent.com/Marxarg/Marxmapa/master/';
 
 window.addEventListener('load', function () {
     //Regular Expression to get coordinates out of URL
     re = /(.*)\/\?p=(\-?(?:\d*)),(\-?(?:\d*))/g;
     //Regular Expression to get coordinates from cursor
     rec = /x\:(\d*) y\:(\d*)/g;
-    gameWindow = document.getElementById("gameWindow");
+    gameWindow = document.getElementById("canvas");
     //DOM element of the displayed X, Y variables
     coorDOM = null;
     findCoor();
@@ -65,7 +37,7 @@ window.addEventListener('load', function () {
     y = 0;
     //list of all available templates
     template_list = null;
-    zoomlevel = 8;
+    zoomlevel = 9;
     //toggle options
     toggle_show = true;
     toggle_follow = true; //if minimap is following window, x_window = x and y_window = y;
@@ -83,17 +55,17 @@ window.addEventListener('load', function () {
     var div = document.createElement('div');
     div.setAttribute('class', 'post block bc2');
     div.innerHTML = '<div id="minimapbg" style="position: absolute; right: 1em; bottom: 1em;">' +
-        '<div class="posy" id="posyt" style="background-size: 97%; background-image: url(https://cdn.pbrd.co/images/HqZKYUY.png); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
+        '<div class="posy" id="posyt" style="background-color: rgba(0, 0, 0, 0.75); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
         '<div id="minimap-text" style="display: none;"></div>' +
-        '<div id="minimap-box" style="position: relative;width:380px;height:260px">' +
+        '<div id="minimap-box" style="position: relative;width:420px;height:300px">' +
         '<canvas id="minimap" style="width: 100%; height: 100%;z-index:1;position:absolute;top:0;left:0;"></canvas>' +
         '<canvas id="minimap-board" style="width: 100%; height: 100%;z-index:2;position:absolute;top:0;left:0;"></canvas>' +
         '<canvas id="minimap-cursor" style="width: 100%; height: 100%;z-index:3;position:absolute;top:0;left:0;"></canvas>' +
         '</div><div id="minimap-config" style="line-height:20px;">' +
-        '<span id="hide-map" style="cursor:pointer;">ODN Minimap' +
-        '</span><span id="follow-mouse" style="cursor:pointer;"' +
-        '</span><span id="zoom-plus" style="cursor:pointer;font-weight:bold;"></span>' +
-        '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;"></span>' +
+        '<span id="hide-map" style="cursor:pointer;">Hide minimap' +
+        '</span> | <span id="follow-mouse" style="cursor:pointer;"Follow mous' +
+        '</span> | Zoom: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
+        '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>' +
         '</div>' +
         '</div>';
     document.body.appendChild(div);
@@ -125,7 +97,7 @@ window.addEventListener('load', function () {
         document.getElementById("minimap-box").style.display = "none";
         document.getElementById("minimap-config").style.display = "none";
         document.getElementById("minimap-text").style.display = "block";
-        document.getElementById("minimap-text").innerHTML = "Mostrar mapa";
+        document.getElementById("minimap-text").innerHTML = "Haritayı Göster";
         document.getElementById("minimap-text").style.cursor = "pointer";
     };
     document.getElementById("minimap-text").onclick = function () {
@@ -157,18 +129,18 @@ window.addEventListener('load', function () {
     document.getElementById("follow-mouse").onclick = function () {
         toggle_follow = !toggle_follow;
         if (toggle_follow) {
-            this.innerHTML = "Seguir o mouse";
+            this.innerHTML = "Fareyi Takip Et";
             loadTemplates();
             x_window = x;
             y_window = y;
             drawCursor();
         } else {
-            this.innerHTML = "Seguir a tela";
+            this.innerHTML = "Ekranı Takip Et";
             getCenter();
         }
     };
 
-    gameWindow = document.getElementById("layer1");
+    gameWindow = document.getElementById("canvas");
     gameWindow.addEventListener('mouseup', function (evt) {
         if (!toggle_show)
             return;
@@ -180,8 +152,11 @@ window.addEventListener('load', function () {
         if (!toggle_show)
             return;
         coorDOM = document.getElementById("coords");
-        x_new = coorDOM.innerHTML.replace(rec, '$1');
-        y_new = coorDOM.innerHTML.replace(rec, '$2');
+        coordsXY = coorDOM.innerHTML.split(/(\d+)/)
+        //console.log(coordsXY);
+        x_new = (coordsXY[0].substring(2) + coordsXY[1])*1
+        y_new = (coordsXY[2].substring(3) + coordsXY[3])*1;
+        //console.log({x_new,y_new});
         if (x != x_new || y != y_new) {
             x = parseInt(x_new);
             y = parseInt(y_new);
@@ -204,7 +179,7 @@ function updateloop() {
     console.log("Updating Template List");
     // Get JSON of available templates
     var xmlhttp = new XMLHttpRequest();
-    var url = window.baseTepmlateUrl + "/templates/data.json";
+    var url = window.baseTepmlateUrl + "templates/data.json?" + new Date().getTime();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             template_list = JSON.parse(this.responseText);
@@ -235,7 +210,7 @@ function toggleShow() {
         document.getElementById("minimap-box").style.display = "none";
         document.getElementById("minimap-config").style.display = "none";
         document.getElementById("minimap-text").style.display = "block";
-        document.getElementById("minimap-text").innerHTML = "Mostrar minimapa";
+        document.getElementById("minimap-text").innerHTML = "Show Minimap";
         document.getElementById("minimapbg").onclick = function () {
             toggleShow()
         };
@@ -296,9 +271,11 @@ function loadTemplates() {
         var temp_y = parseInt(template_list[template]["y"]) * 1;
         var temp_xr = parseInt(template_list[template]["x"]) + parseInt(template_list[template]["width"]);
         var temp_yb = parseInt(template_list[template]["y"]) + parseInt(template_list[template]["height"]);
-         if (temp_xr <= x_left || temp_yb <= y_top || temp_x >= x_right || temp_y >= y_bottom)
+        // if (temp_xr <= x_left || temp_yb <= y_top || temp_x >= x_right || temp_y >= y_bottom)
+        //    continue
+        if (!x_window.between(temp_x-range*1, temp_xr+range*1))
             continue
-        if (!x_window.between(temp_x, temp_xr) && !y_window.between(temp_y, temp_yb))
+        if (!y_window.between(temp_y-range*1, temp_yb+range*1))
             continue
         console.log("Template " + template + " is in range!");
         // console.log(x_window, y_window);
@@ -308,7 +285,7 @@ function loadTemplates() {
         if (zooming_in == false && zooming_out == false) {
             document.getElementById("minimap-box").style.display = "none";
             document.getElementById("minimap-text").style.display = "block";
-            document.getElementById("minimap-text").innerHTML = "Não há templates.";
+            document.getElementById("minimap-text").innerHTML = "No template nearby.";
         }
     } else {
         document.getElementById("minimap-box").style.display = "block";
@@ -331,9 +308,9 @@ function loadImage(imagename) {
     console.log("    Load image " + imagename);
     image_list[imagename] = new Image();
     if (cachebreaker != null)
-        image_list[imagename].src = window.baseTepmlateUrl + "/images/" + template_list[imagename].name;
+        image_list[imagename].src = window.baseTepmlateUrl +"images/"+template_list[imagename].name;
     else
-        image_list[imagename].src = window.baseTepmlateUrl + "/images/" + template_list[imagename].name;
+        image_list[imagename].src = window.baseTepmlateUrl +"images/"+ template_list[imagename].name;
     image_list[imagename].onload = function () {
         counter += 1;
         //if last needed image loaded, start drawing
