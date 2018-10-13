@@ -91,7 +91,7 @@ window.addEventListener('load', function () {
     drawBoard();
     drawCursor();
 
-    document.getElementById("hide-map").onclick = function () {
+    document.getElementById("Esconder mapa").onclick = function () {
         console.log("This should do something, but it doesn't");
         toggle_show = false;
         document.getElementById("minimap-box").style.display = "none";
