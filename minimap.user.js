@@ -7,8 +7,8 @@
 // @match        https://pixelzone.io/*
 // @match        http://pixelzone.io/*
 // @homepage     https://github.com/xDied/ODNMinimap/
-// @updateURL    https://raw.githubusercontent.com/xDied/ODNMinimap/blob/master/minimap.user.js
-// @downloadURL  https://raw.githubusercontent.com/xDied/ODNMinimap/blob/master/minimap.user.js
+// @updateURL    https://raw.githubusercontent.com/xDied/ODNMinimap/master/minimap.user.js
+// @downloadURL  https://raw.githubusercontent.com/xDied/ODNMinimap/master/minimap.user.js
 // @grant        none
 // ==/UserScript==
 
