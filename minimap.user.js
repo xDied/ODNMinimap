@@ -54,7 +54,7 @@ window.addEventListener('load', function () {
 
     var div = document.createElement('div');
     div.setAttribute('class', 'post block bc2');
-    div.innerHTML = '<div id="minimapbg" style="position: absolute; right: 1em; bottom: 1em; z-index: 2;">' +
+    div.innerHTML = '<div id="minimapbg" style="position: absolute; right: 1em; bottom: 1em;">' +
         '<div class="posy" id="posyt" style="background-size: 97%; background-image: url(https://cdn.pbrd.co/images/HqZKYUY.png); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
         '<div id="minimap-text" style="display: none;"></div>' +
         '<div id="minimap-box" style="position: relative;width:420px;height:300px">' +
@@ -62,7 +62,7 @@ window.addEventListener('load', function () {
         '<canvas id="minimap-board" style="width: 100%; height: 100%;z-index:2;position:absolute;top:0;left:0;"></canvas>' +
         '<canvas id="minimap-cursor" style="width: 100%; height: 100%;z-index:3;position:absolute;top:0;left:0;"></canvas>' +
         '</div><div id="minimap-config" style="line-height:20px;">' +
-        '<span id="hide-map" style="cursor:pointer;color:white"> Esconder' +
+        '<span id="hide-map" style="cursor:pointer;">Hide minimap' +
         '</span> | <span id="follow-mouse" style="cursor:pointer;"Seguir mouse' +
         '</span> | Zoom: <span id="zoom-plus" style="cursor:pointer;font-weight:bold;">+</span>  /  ' +
         '<span id="zoom-minus" style="cursor:pointer;font-weight:bold;">-</span>' +
@@ -91,13 +91,13 @@ window.addEventListener('load', function () {
     drawBoard();
     drawCursor();
 
-    document.getElementById("Esconder mapa").onclick = function () {
+    document.getElementById("hide-map").onclick = function () {
         console.log("This should do something, but it doesn't");
         toggle_show = false;
         document.getElementById("minimap-box").style.display = "none";
         document.getElementById("minimap-config").style.display = "none";
         document.getElementById("minimap-text").style.display = "block";
-        document.getElementById("minimap-text").innerHTML = "Mostrar minimapa";
+        document.getElementById("minimap-text").innerHTML = "Mostrar o minimapa";
         document.getElementById("minimap-text").style.cursor = "pointer";
     };
     document.getElementById("minimap-text").onclick = function () {
@@ -129,13 +129,13 @@ window.addEventListener('load', function () {
     document.getElementById("follow-mouse").onclick = function () {
         toggle_follow = !toggle_follow;
         if (toggle_follow) {
-            this.innerHTML = "Siga a tela";
+            this.innerHTML = "Seguir a tela";
             loadTemplates();
             x_window = x;
             y_window = y;
             drawCursor();
         } else {
-            this.innerHTML = "Siga o mouse";
+            this.innerHTML = "Seguir o mouse";
             getCenter();
         }
     };
@@ -210,7 +210,7 @@ function toggleShow() {
         document.getElementById("minimap-box").style.display = "none";
         document.getElementById("minimap-config").style.display = "none";
         document.getElementById("minimap-text").style.display = "block";
-        document.getElementById("minimap-text").innerHTML = "Mostrar minimapa";
+        document.getElementById("minimap-text").innerHTML = "Mostrar o minimapa";
         document.getElementById("minimapbg").onclick = function () {
             toggleShow()
         };
@@ -285,7 +285,7 @@ function loadTemplates() {
         if (zooming_in == false && zooming_out == false) {
             document.getElementById("minimap-box").style.display = "none";
             document.getElementById("minimap-text").style.display = "block";
-            document.getElementById("minimap-text").innerHTML = "Nenhuma template aqui.";
+            document.getElementById("minimap-text").innerHTML = "Não tem nada aqui.";
         }
     } else {
         document.getElementById("minimap-box").style.display = "block";
