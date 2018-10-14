@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         ODNZone Minimap
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      3.0
 // @description  ODNZone Minimap
-// @author       olegispe#2453 Edited by Obsidian
+// @author       olegispe#2453 Edited by Obsidian and Biel
 // @match        https://pixelzone.io/*
 // @match        http://pixelzone.io/*
 // @homepage     https://github.com/xDied/ODNMinimap/
