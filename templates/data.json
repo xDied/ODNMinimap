@@ -411,5 +411,12 @@
     "y": 595,
     "width": 188,
     "height": 43 
+},
+  "tiger": {
+    "name": "tiger.png",
+    "x": -1575,
+    "y": -815,
+    "width": 174,
+    "height": 119 
   }
 }
