@@ -140,7 +140,7 @@ window.addEventListener('load', function () {
         }
     };
 
-    gameWindow = document.getElementById("canvas");
+     gameWindow = document.getElementById("layer1");
     gameWindow.addEventListener('mouseup', function (evt) {
         if (!toggle_show)
             return;
@@ -152,11 +152,8 @@ window.addEventListener('load', function () {
         if (!toggle_show)
             return;
         coorDOM = document.getElementById("coords");
-        coordsXY = coorDOM.innerHTML.split(/(\d+)/)
-        //console.log(coordsXY);
-        x_new = (coordsXY[0].substring(2) + coordsXY[1])*1
-        y_new = (coordsXY[2].substring(3) + coordsXY[3])*1;
-        //console.log({x_new,y_new});
+        x_new = coorDOM.innerHTML.replace(rec, '$1');
+        y_new = coorDOM.innerHTML.replace(rec, '$2');
         if (x != x_new || y != y_new) {
             x = parseInt(x_new);
             y = parseInt(y_new);
@@ -179,7 +176,7 @@ function updateloop() {
     console.log("Updating Template List");
     // Get JSON of available templates
     var xmlhttp = new XMLHttpRequest();
-    var url = window.baseTepmlateUrl + "templates/data.json?" + new Date().getTime();
+    var url = window.baseTepmlateUrl + "/templates/data.json?" + new Date().getTime();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             template_list = JSON.parse(this.responseText);
