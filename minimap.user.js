@@ -55,7 +55,7 @@ window.addEventListener('load', function () {
     var div = document.createElement('div');
     div.setAttribute('class', 'post block bc2');
     div.innerHTML = '<div id="minimapbg" style="position: absolute; right: 1em; bottom: 1em;">' +
-        '<div class="posy" id="posyt" style="background-color: rgba(0, 0, 0, 0.75); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' +
+        '<div class="posy" id="posyt" style="background-size: 97%; background-image: url(https://cdn.pbrd.co/images/HqZKYUY.png); color: rgb(250, 250, 250); text-align: center; line-height: 42px; vertical-align: middle; width: auto; height: auto; border-radius: 21px; padding: 6px;">' 
         '<div id="minimap-text" style="display: none;"></div>' +
         '<div id="minimap-box" style="position: relative;width:420px;height:300px">' +
         '<canvas id="minimap" style="width: 100%; height: 100%;z-index:1;position:absolute;top:0;left:0;"></canvas>' +
@@ -91,13 +91,13 @@ window.addEventListener('load', function () {
     drawBoard();
     drawCursor();
 
-    document.getElementById("hide-map").onclick = function () {
+    document.getElementById("Esconder").onclick = function () {
         console.log("This should do something, but it doesn't");
         toggle_show = false;
         document.getElementById("minimap-box").style.display = "none";
         document.getElementById("minimap-config").style.display = "none";
         document.getElementById("minimap-text").style.display = "block";
-        document.getElementById("minimap-text").innerHTML = "Haritayı Göster";
+        document.getElementById("minimap-text").innerHTML = "Mostrar";
         document.getElementById("minimap-text").style.cursor = "pointer";
     };
     document.getElementById("minimap-text").onclick = function () {
@@ -129,13 +129,13 @@ window.addEventListener('load', function () {
     document.getElementById("follow-mouse").onclick = function () {
         toggle_follow = !toggle_follow;
         if (toggle_follow) {
-            this.innerHTML = "Fareyi Takip Et";
+            this.innerHTML = "Siga o mouse";
             loadTemplates();
             x_window = x;
             y_window = y;
             drawCursor();
         } else {
-            this.innerHTML = "Ekranı Takip Et";
+            this.innerHTML = "Siga o mouse";
             getCenter();
         }
     };
@@ -207,7 +207,7 @@ function toggleShow() {
         document.getElementById("minimap-box").style.display = "none";
         document.getElementById("minimap-config").style.display = "none";
         document.getElementById("minimap-text").style.display = "block";
-        document.getElementById("minimap-text").innerHTML = "Show Minimap";
+        document.getElementById("minimap-text").innerHTML = "Mostrar";
         document.getElementById("minimapbg").onclick = function () {
             toggleShow()
         };
@@ -282,7 +282,7 @@ function loadTemplates() {
         if (zooming_in == false && zooming_out == false) {
             document.getElementById("minimap-box").style.display = "none";
             document.getElementById("minimap-text").style.display = "block";
-            document.getElementById("minimap-text").innerHTML = "No template nearby.";
+            document.getElementById("minimap-text").innerHTML = "Não tem nada aqui.";
         }
     } else {
         document.getElementById("minimap-box").style.display = "block";
