@@ -418,5 +418,12 @@
     "y": -815,
     "width": 174,
     "height": 119 
+},
+  "urk": {
+    "name": "urk.png",
+    "x": 60,
+    "y": 2525,
+    "width": 108,
+    "height": 100
   }
 }
