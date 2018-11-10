@@ -425,5 +425,12 @@
     "y": 2525,
     "width": 108,
     "height": 100
+},
+  "aktop": {
+    "name": "aktop.png",
+    "x": 3351,
+    "y": 541,
+    "width": 100,
+    "height": 100
   }
 }
