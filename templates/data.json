@@ -432,5 +432,12 @@
     "y": 509,
     "width": 100,
     "height": 100
+},
+  "tut": {
+    "name": "tutp.png",
+    "x": 1420,
+    "y": 3802,
+    "width": 164,
+    "height": 160
   }
 }
