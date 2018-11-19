@@ -446,6 +446,13 @@
     "y": -2694,
     "width": 206,
     "height": 65
+},
+  "yuki": {
+    "name": "yuki.png",
+    "x": 2103,
+    "y": 3936,
+    "width": 41,
+    "height": 42
   }
 }
 
