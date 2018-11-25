@@ -453,6 +453,13 @@
     "y": 3936,
     "width": 41,
     "height": 42
+},
+  "boat": {
+    "name": "boat.png",
+    "x": 1773,
+    "y": 3922,
+    "width": 87,
+    "height": 80
   }
 }
 
