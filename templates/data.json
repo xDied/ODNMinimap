@@ -460,6 +460,13 @@
     "y": 3922,
     "width": 87,
     "height": 80
+},
+  "purev": {
+    "name": "purev.png",
+    "x": 1257,
+    "y": 2540,
+    "width": 155,
+    "height": 243
   }
 }
 
