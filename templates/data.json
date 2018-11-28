@@ -467,6 +467,13 @@
     "y": 2540,
     "width": 155,
     "height": 243
+},
+  "biel": {
+    "name": "biel.png",
+    "x": 1950,
+    "y": 3640,
+    "width": 45,
+    "height": 22
   }
 }
 
