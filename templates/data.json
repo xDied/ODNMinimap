@@ -474,6 +474,13 @@
     "y": 2577,
     "width": 308,
     "height": 198  
+},
+  "grimm": {
+    "name": "grimm.png",
+    "x": 919,
+    "y": -765,
+    "width": 256,
+    "height": 256  
   }
 }
 
