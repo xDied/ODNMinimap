@@ -489,11 +489,11 @@
     "width": 60,
     "height": 79  
 },
-  "es": {
-    "name": "es.png",
-    "x": 2120,
-    "y": 3662,
-    "width": 33,
-    "height": 86  
+  "ar": {
+    "name": "ar.png",
+    "x": 2117,
+    "y": 3793,
+    "width": 36,
+    "height": 36  
   }
 }
