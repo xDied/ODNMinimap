@@ -118,13 +118,6 @@
 	"width": 45,
 	"height": 33
 },
-    "mt": {
-	"name": "mt.png",
-	"x": 1819,
-	"y": 3773,
-	"width": 209,
-	"height": 44 
-},
     "mg": {
         "name": "mg.png",
         "x": 2274,
@@ -278,14 +271,7 @@
     "y": 3066,
     "width": 59,
     "height": 39  
-},
-  "Obs": {
-    "name": "Obs.png",
-    "x": 1848,
-    "y": 3084,
-    "width": 301,
-    "height": 557 
-},
+ },
   "ddd": {
     "name": "ddd.png",
     "x": 2171,
