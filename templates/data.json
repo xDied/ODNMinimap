@@ -509,6 +509,13 @@
     "y": 3640,
     "width": 106,
     "height": 22
+},
+  "grifo": {
+    "name": "grifo.png",
+    "x": 1859,
+    "y": 3728,
+    "width": 118,
+    "height": 119
   }
 }
 
