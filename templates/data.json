@@ -489,12 +489,12 @@
     "width": 1268,
     "height": 724
 },
-  "biaw": {
-    "name": "biaw.png",
-    "x": 1929,
-    "y": 3640,
-    "width": 106,
-    "height": 22
+  "Obs": {
+    "name": "Obs.png",
+    "x": 1848,
+    "y": 3084,
+    "width": 301,
+    "height": 557
 },
   "grifo": {
     "name": "grifo.png",
@@ -502,6 +502,13 @@
     "y": 3728,
     "width": 118,
     "height": 119
+},
+  "biaw": {
+    "name": "biaw.png",
+    "x": 1929,
+    "y": 3640,
+    "width": 106,
+    "height": 22
   }
 }
 
