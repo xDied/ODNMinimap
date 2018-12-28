@@ -502,6 +502,13 @@
     "y": 3640,
     "width": 106,
     "height": 22
+ },
+  "edu": {
+    "name": "edu.png",
+    "x": 3379,
+    "y": 2927,
+    "width": 83,
+    "height": 83
   }
 }
 
