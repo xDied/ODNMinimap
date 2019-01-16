@@ -491,10 +491,10 @@
 },
   "grifo": {
     "name": "grifo.png",
-    "x": 1859,
-    "y": 3728,
-    "width": 118,
-    "height": 119
+    "x": 1829,
+    "y": 3724,
+    "width": 178,
+    "height": 127
 },
   "biaw": {
     "name": "biaw.png",
@@ -503,12 +503,12 @@
     "width": 106,
     "height": 22
  },
-  "edu": {
-    "name": "edu.png",
-    "x": 3379,
-    "y": 2927,
-    "width": 83,
-    "height": 83
+  "bl": {
+    "name": "bl.png",
+    "x": 1570,
+    "y": 3890,
+    "width": 196,
+    "height": 184
 },
   "senna": {
     "name": "senna.png",
