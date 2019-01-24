@@ -552,6 +552,13 @@
     "y": 3803,
     "width": 151,
     "height": 97
+},
+  "glory": {
+    "name": "glory.png",
+    "x": 1729,
+    "y": 3768,
+    "width": 98,
+    "height": 127
   }
 }
 
