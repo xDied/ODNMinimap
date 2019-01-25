@@ -54,13 +54,6 @@
     "y": 1522,
     "width": 106,
     "height": 121
-  },
-  "Yellow": {
-    "name": "Yellow.png",
-    "x": 2161,
-    "y": -3857,
-    "width": 334,
-    "height": 225
    },
   "Antartic": {
     "name": "Antartic.png",
@@ -251,20 +244,6 @@
     "width": 111,
     "height": 49 
 },
-  "ag": {
-    "name": "ag.png",
-    "x": 2175,
-    "y": -3630,
-    "width": 260,
-    "height": 176 
-},
-  "LG": {
-    "name": "LG.png",
-    "x": 3430,
-    "y": -3916,
-    "width": 351,
-    "height": 219 
-},
   "madru": {
     "name": "madru.png",
     "x": 2262,
@@ -334,20 +313,6 @@
     "y": 2770,
     "width": 200,
     "height": 200 
-},
-  "Mural": {
-    "name": "Mural.png",
-    "x": 1132,
-    "y": 2140,
-    "width": 79,
-    "height": 79 
-},
-  "Praise": {
-    "name": "Praise.png",
-    "x": 1431,
-    "y": 2096,
-    "width": 51,
-    "height": 54 
 },
   "sauronpz": {
     "name": "sauronpz.png",
