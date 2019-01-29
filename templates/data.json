@@ -256,14 +256,7 @@
     "x": 2171,
     "y": 2687,
     "width": 260,
-    "height": 250 
-},
-  "planta": {
-    "name": "planta.png",
-    "x": 3117,
-    "y": 2635,
-    "width": 60,
-    "height": 109 
+    "height": 250
 },
   "kuru": {
     "name": "kuru.png",
@@ -566,5 +559,12 @@
     "y": 3483,
     "width": 133,
     "height": 112
+},
+  "GREB": {
+    "name": "GREB.png",
+    "x": 3083,
+    "y": 2686,
+    "width": 197,
+    "height": 188
   }
 }
